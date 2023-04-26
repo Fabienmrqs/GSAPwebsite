@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="body">
+    <section class="home">
+        <header class="header">
+            <nav class="nav">
+                <a href="./index.html" class="nav-title">Mrqs.</a>
+                <div class="nav-link">
+                    <ul class="ul">
+                        <li class="li"><a class="nav-a" href="./about.html">About</a></li>
+                        <li class="li"><a class="nav-a" href="./sebaclean.html">Works</a></li>
+                        <li class="li"><a class="nav-a" href="./contact.html">Contact</a></li>
+    
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="container-home">
+            <div class="home-title">Fabricant de  patisserie et  de dessert</div>
+            <span class="line"></span>
+            <div class="home-text">
+                Fabricant de Pâtisseries et Desserts
+                Si Traiteur de Paris est reconnu internationalement comme fabricant de pâtisseries et de desserts, nous proposons également aux Professionnels de la restauration des gammes complètes de produits surgelés comme des plateaux de petits fours sucrés et de canapés salés.
+                <br>
+                <br>
+                <br>
+                <br>
+
+                Nos gammes de produits surgelés Premium, Pâtisseries, Desserts, Petits Fours Sucrés, Canapés Salés et Gratins, sont exclusivement réservées aux Professionnels de la Restauration et du Food Service. Nos produits sont également disponibles en Cash and Carry pour les distributeurs et grossistes alimentaires. 
+
+
+            </div>
+        </div>
+        <button class="button">Je découvre</button>
+
+        <div class="scroll-container">
+            <div class="mouse"></div>
+            <div class="mouse-text">Scroll to explore</div>
+        </div>
+
+    </section>
+    <section class="section2">
+        <title class="section2-title">Discover our products collection</title>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/CSSRulePlugin.min.js" integrity="sha512-zaTjCyJwbhpd8V594wpmUStv6Dy/SnmP7jR+XXnE49z2ayHkSirlNiP4XQc15Zgk+p5gXGe5ZUQYu4yRtShqkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        let tl = gsap.timeline({default: {ease : "power4.inOut", duration: 2}})
+        let flagPoles = CSSRulePlugin.getRule(".card:before")
+
+
+        tl.to('.mouse-text', {'clip-path' : 'polygon(0 100%, 100% 100%, 100% 0%, 0% 0%)', opacity: 1, y:0, duration: 1})
+        tl.to('.mouse', {'clip-path' : 'polygon(0 100%, 100% 100%, 100% 0%, 0% 0%)', opacity: 1, y:0, duration: 1})
+
+
+        tl.to('.home-title', {'clip-path' : 'polygon(0 100%, 100% 100%, 100% 0%, 0% 0%)', opacity: 1, y:0, duration: 1})
+        tl.to('.home-text', {'clip-path' : 'polygon(0 100%, 100% 100%, 100% 0%, 0% 0%)', opacity: 1, y:0, duration: 1})
+        tl.to('.button', {'clip-path' : 'polygon(0 100%, 100% 100%, 100% 0%, 0% 0%)', opacity: 1, y:0, duration: 1})
+
+        TweenMax.from('.nav-title', 1, {opacity:0, x:-20, ease: Expo.easeInOut})
+        TweenMax.from('.nav-link', 1, {opacity:0, x:-20, ease: Power3.easeInOut},0.08)
+
+
+    </script>
+</body>
+</html>
