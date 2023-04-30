@@ -46,14 +46,25 @@
 
     </section>
     <section class="section2">
-        <title class="section2-title">Discover our products collection</title>
+        <title id="s2" class="section2-title">Discover our products collection</title>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/CSSRulePlugin.min.js" integrity="sha512-zaTjCyJwbhpd8V594wpmUStv6Dy/SnmP7jR+XXnE49z2ayHkSirlNiP4XQc15Zgk+p5gXGe5ZUQYu4yRtShqkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js "></script>
     <script>
 
-    gsap.registerPlugin(ScrollTrigger)
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to('#s2', {
+            scrollTrigger:{
+                trigger:'#s2',
+                start:'top 500px',
+                end: 'bot',
+                markers: 'true'
+            },
+            x: 4,
+            duration: 3
+        })
 
         let tl = gsap.timeline({default: {ease : "power4.inOut", duration: 2}})
         let flagPoles = CSSRulePlugin.getRule(".card:before")
