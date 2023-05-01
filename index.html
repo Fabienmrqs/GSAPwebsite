@@ -29,9 +29,6 @@
                 Si Traiteur de Paris est reconnu internationalement comme fabricant de pâtisseries et de desserts, nous proposons également aux Professionnels de la restauration des gammes complètes de produits surgelés comme des plateaux de petits fours sucrés et de canapés salés.
                 <br>
                 <br>
-                <br>
-                <br>
-
                 Nos gammes de produits surgelés Premium, Pâtisseries, Desserts, Petits Fours Sucrés, Canapés Salés et Gratins, sont exclusivement réservées aux Professionnels de la Restauration et du Food Service. Nos produits sont également disponibles en Cash and Carry pour les distributeurs et grossistes alimentaires. 
 
 
@@ -46,7 +43,7 @@
 
     </section>
     <section class="section2">
-        <title id="s2" class="section2-title">Discover our products collection</title>
+        <div class="s2">Discover our products collection</div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/CSSRulePlugin.min.js" integrity="sha512-zaTjCyJwbhpd8V594wpmUStv6Dy/SnmP7jR+XXnE49z2ayHkSirlNiP4XQc15Zgk+p5gXGe5ZUQYu4yRtShqkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -55,16 +52,26 @@
 
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.to('#s2', {
-            scrollTrigger:{
-                trigger:'#s2',
-                start:'top 500px',
-                end: 'bot',
-                markers: 'true'
-            },
-            x: 4,
-            duration: 3
-        })
+    gsap.fromTo(
+  ".s2",
+  {
+    opacity:1,
+    y: 30,
+    autoAlpha: 0
+  },
+  {
+    y: 0,
+    autoAlpha: 1,
+    delay: 1,
+    duration: 2,
+    ease: "power4.inOut",
+    scrollTrigger: {
+      trigger: ".s2",
+      start: "top center",
+      markers: "true"
+    }
+  }
+);
 
         let tl = gsap.timeline({default: {ease : "power4.inOut", duration: 2}})
         let flagPoles = CSSRulePlugin.getRule(".card:before")

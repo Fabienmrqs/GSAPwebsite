@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 
 * {
     margin: 0;
@@ -93,7 +94,7 @@ html {
 .home-title {
     margin-left: 160px;
     margin-top: 70px;
-    font-family: 'Ms Madi', cursive;
+    font-family: 'Parisienne', cursive;
     font-size: 56px;
     color: #F2F2F2;
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
@@ -114,13 +115,14 @@ html {
     margin-left: 160px;
     margin-top: 50px;
     font-family: 'Montserrat';
-    font-size: 14px;
+    font-size: 16px;
     color: #F2F2F2;
-    max-width: 40%;
+    max-width: 30%;
     transform: translateY(100px);
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
     opacity: 0;
     font-weight: 300;
+    line-height: 20px;
 }
 
 .b {
@@ -130,24 +132,23 @@ html {
 
 .button {
     display:inline-flex;
-    width: 160px;
-    height: 48px;
-    background: #EECBBD;
+    width: 140px;
+    height: 42px;
+    background: #ffff;
     color: #222222;
     align-items: center;
     justify-content: center;
     font-family: 'Montserrat';
     font-size: 15px;
-    margin-top: 150px;
+    margin-top: 36px;
     font-weight: 400;
-    letter-spacing: 0.14em;
-    border-radius: 10px;
+    border-radius: 4px;
     margin-left: 160px;
 
     transform: translateY(100px);
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
     opacity: 0;
-    border: 1px solid #EECBBD;
+    border: 1px solid #ffff;
 }
 
 .scroll-container{
@@ -213,4 +214,12 @@ html {
     height: 100vh;
     width: 100%;
     background-color: beige;
+}
+
+.s2 {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50%;
+    font-family: 'Montserrat';
+
 }
