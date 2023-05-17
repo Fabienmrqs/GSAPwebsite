@@ -223,3 +223,16 @@ html {
     font-family: 'Montserrat';
 
 }
+
+.s2-img-container {
+    padding-top: 5%;
+    margin-left: 5%;
+}
+
+.s2-block-img  {
+    height: 400px;
+    width: 600px;
+    /* object-fit: cover; */
+    border-radius: 7px;
+
+}
