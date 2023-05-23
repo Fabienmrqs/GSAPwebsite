@@ -216,6 +216,10 @@ html {
     background-color: beige;
 }
 
+.left-container {
+    display: flex;
+}
+
 .s2 {
     font-size: 30px;
     text-align: center;
@@ -235,4 +239,8 @@ html {
     /* object-fit: cover; */
     border-radius: 7px;
 
+}
+
+.s2-text {
+    height: 200px;
 }
