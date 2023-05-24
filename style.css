@@ -243,4 +243,18 @@ html {
 
 .s2-text {
     height: 200px;
+    background: white;
+    margin-top: 120px;
+}
+
+.s2-title-text-container{
+    display: flex;
+}
+
+.s2-title-text-left {
+    margin-right: 10px;
+}
+
+.s2-title-text {
+    margin-right: 10px;
 }
